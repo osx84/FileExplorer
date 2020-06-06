@@ -76,6 +76,7 @@ final class ItemCell: UICollectionViewCell, Editable {
         titleTextLabel.numberOfLines = 1
         titleTextLabel.lineBreakMode = .byTruncatingMiddle
         titleTextLabel.font = UIFont.systemFont(ofSize: 17)
+        titleTextLabel.textColor = UIColor.black
         containerView.addSubview(titleTextLabel)
         
         subtitleTextLabel = UILabel()

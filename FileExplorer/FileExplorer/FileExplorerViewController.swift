@@ -101,6 +101,12 @@ public final class FileExplorerViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
         
+        // overrideUserInterfaceStyle is available with iOS 13
+        if #available(iOS 13.0, *) {
+            // Always adopt a light interface style.
+            overrideUserInterfaceStyle = .light
+        }
+        
         view.backgroundColor = UIColor.white
         
         let navigationController = UINavigationController()
